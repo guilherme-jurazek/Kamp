@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro de Eventos</title>
+    <link rel="stylesheet" href="css/cadastroeventos.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="icon" href="logoN.png">
+    <link rel="stylesheet" href="css/hover-min.css" media="all">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body class="sign-up-js">
+    <div class="container banner">
+        <div class="content first-content">
+            <div class="first-column">
+                <a class="navbar-brand" href="index.html"><img src="logoN.png" width="100px" alt=""></a>
+                <h2 class="title title-primary">Kamp !!</h2>
+                <p class="description description-primary esconder">Crie já seu campeonato!</p>
+                <p class="description description-primary esconder">Divirta-se com competidores do Brasil todo!</p>
+                <button id="signin" class="btn btn-primary">Saiba Mais</button>
+            </div>    
+            <div class="second-column">
+                <h2 class="title title-second ">Cadastrar Evento</h2>
+                <form class="form">
+                    <label class="label-input" for="">
+                        <i class="far fa-user icon-modify"></i>
+                        <input id="nomeE" type="text" placeholder="Nome do Evento" required>
+                    </label>
+                    
+                    <p style="color: #115571;font-weight: bold;">Online ou Físico?</p>
+                    <div style=" display: inline-flex;">
+                        <input type="radio" style="width: 35px; height: 20px; margin-left: 20px;" id="online" name="lugar" value="online" required>
+                        <label for="online">Online</label>
+                        <br>
+                        <input type="radio" style="width: 35px; height: 20px; margin-left: 20px;" id="fisico" name="lugar" value="fisico" required>
+                        <label for="fisico">Físico</label>
+                    </div>
+
+                    <p style="color: #115571;font-weight: bold;">Pago ou gratuito?</p>
+                    <div style=" display: inline-flex;">
+                        <input type="radio" style="width: 35px; height: 20px; margin-left: 20px;" id="pago" name="preço" value="pago" required>
+                        <label for="pago">Pago</label>
+                        <br>
+                        <input type="radio" style="width: 35px; height: 20px; margin-left: 32px;" id="gratis" name="preço" value="gratis" required>
+                        <label for="gratis">Gratuito</label>
+                    </div>
+
+                    <label class="label-input" for="">
+                        <i class="far fa-user icon-modify"></i>
+                        <input id="tipoJ" type="text" placeholder="Tipo de Jogo" required>
+                    </label>
+
+                    <label class="label-input" for="">
+                        <i class="far fa-user icon-modify"></i>
+                        <input id="modalidade" type="text" placeholder="Modalidade do Jogo" required>
+                    </label>
+
+                    <label class="label-input" for="">
+                        <i class="far fa-user icon-modify"></i>
+                        <input id="premio" type="text" placeholder="Prêmio" required>
+                    </label>
+
+                    <label class="label-input" for="">
+                        <i class="far fa-user icon-modify"></i>
+                        <input type="date" placeholder="Data" required>
+                    </label>
+
+                    <label class="label-input" for="">
+                        <i class="far fa-user icon-modify"></i>
+                        <input id="time" type="time" placeholder="Tempo do Evento" required>
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <i class="far fa-user icon-modify"></i>
+                        <input id="nomeEmpresa" type="text" placeholder="Nome da Empresa" required>
+                    </label>
+
+                    <label class="label-input" for="">
+                        <i class="far fa-user icon-modify"></i>
+                        <input  id="req"type="text" placeholder="Requisitos para participar" required>
+                    </label>
+                    
+                    <input type="submit" onclick="enviardados()" style="background-color: #115571;" class="btn btn-second"></input>        
+                </form>
+            </div>
+        </div>
+        <div class="content second-content">
+            <div class="first-column">
+                <a class="navbar-brand" href="index.html"><img src="logoN.png" width="100px" alt=""></a>
+                <h2 class="title title-primary">Cadastrar Eventos</h2>
+                <p class="description description-primary esconder">Crie já seu campeonato!</p>
+                <p class="description description-primary esconder">Divirta-se com competidores do Brasil todo!</p>
+                <button id="signup" class="btn btn-primary">Cadastrar</button>
+            </div>
+            <div class="second-column"> 
+                    <a href="PagEventos.html"><h2 class="title title-second hvr-float-shadow">Campeonatos</h2></a>
+                    <div class="row pt-5">
+                      <div class="col-sm">  
+                            <img src="assets/CardCamp/camp01.jpg" alt="" style="width: 200px;" class="img-fluid mb-5 hvr-grow ">
+                      </div>
+                      <div class="col-sm">
+                        <img src="assets/CardCamp/camp02.jpg" alt="" style="width: 200px;" class="img-fluid mb-5 hvr-grow ">
+                      </div>
+                      <div class="col-sm">
+                        <img src="assets/img/cs-go.jpg" alt="" style="width: 200px;" class="img-fluid mb-5 hvr-grow ">
+                      </div>
+                      <div class="col-sm">
+                        <img src="assets/CardCamp/camp04.jpg" alt="" style="width: 200px;" class="img-fluid mb-5 hvr-grow ">
+                      </div>
+                      <div class="col-sm">
+                        <img src="assets/CardCamp/camp05.jpg" alt="" style="width: 200px;" class="img-fluid mb-5 hvr-grow ">
+                      </div>
+                      <div class="col-sm">
+                        <img src="assets/CardCamp/camp06.jpg" alt="" style="width: 200px;" class="img-fluid mb-5 hvr-grow ">
+                      </div>
+                  </div>  
+            </div>
+                
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script src="js/CadEventos.js"></script>
+</body>
+</html>

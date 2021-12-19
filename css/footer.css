@@ -1,0 +1,58 @@
+.h2-sm-light {
+	color: #115571;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.h2-sm-light::after, .h2-sm-light::before 	{
+	content: "";
+	display: block;
+	width: 0;
+	height: 3px;
+	background: #115571;
+	transition: width .3s;
+}
+
+.h2-sm-light:hover::after, .h2-sm-light:hover::before{
+	width: 100%;
+}
+
+.h2-sm-dark {
+	color: #fff;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.h2-sm-dark::after, .h2-sm-dark::before	{
+	content: "";
+	display: block;
+	width: 0;
+	height: 3px;
+	background: #fff;
+	transition: width .3s;
+}
+
+.h2-sm-dark:hover::after, .h2-sm-dark:hover::before {
+	width: 100%;
+}
+
+.bounce {
+	cursor: pointer;
+}
+.bounce:hover {
+	animation: bounce 1.5s ease-in-out infinite;
+}
+@keyframes bounce {
+	0%,
+	20%,
+	60%,
+	100% {
+		transform: translateY(0);
+	}
+	40% {
+		transform: translateY(-30px);
+	}
+	80% {
+		transform: translateY(-20px);
+	}
+}

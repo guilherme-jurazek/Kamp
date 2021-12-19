@@ -1,0 +1,226 @@
+@import url(../css/fonts.css);
+@import url(../js/main.js);
+
+:root{
+    --Abel:'Abel', cursive;
+    --Anton:'Anton', cursive;
+    --Josefin:'Josefin', cursive;
+    --Lexend:'Lexend', cursive;
+    --Livvic:'Livvic', cursive;
+
+
+    /* THEME COLORS */
+    --text-gray: #3f4954;
+    --text-light: #686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+
+
+    /* GRADIENT COLORS */
+
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+
+}
+
+header{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+}
+.navbar{
+    padding: 20px 0;
+}
+
+.navbar-brand{
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #115571;
+}
+.nav-item{
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.navbar-light .navbar-nav .nav-item .nav-link:hover,
+.navbar-light .navbar-nav .nav-item.active .nav-link{
+    background: #115571;
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link{
+    color: #115571;
+    padding: 5px 15px;
+}
+
+.banner{
+    position: relative;
+    background: url(../bg.jpg);
+    min-height: 150vh;
+    background-size: cover;
+    background-position: center;
+    padding: 250px 0 200px;
+}
+
+.banner h2{
+    margin: 0;
+    padding: 0;
+    font-size: 2.8em;
+    font-weight: 1000;
+    color: #115571;
+    text-transform: uppercase;
+}
+
+.banner p{
+    margin: 1em 0 0;
+    padding: 0;
+    font-size: 1.2em;  
+    line-height: 1.5em;
+    color: #262626;
+    
+}
+
+.btnD1{
+    display: inline-block;
+    margin: 1em 0 0;
+    background: #115571;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 800;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.btnD1:hover{
+    color: #fff;
+    text-decoration: none;
+    background: #014571;
+}
+
+.navbar-light .navbar-toggler{
+    border: none;
+    color: #fff;
+    border: 2px solid #7f7f7f;
+    border-radius: 0;
+    outline: none;
+}
+
+.navbar-collapse{
+    background: #fff;
+}
+@media (max-width: 768px){
+    .banner{
+        padding: 200px 0;
+        
+    }
+    .banner h2{
+        font-size: 1.8em;
+        
+    }
+}
+
+span{
+    font-family: var(--Abel);
+}
+
+/* ------------- CAROUSEL -------------  */
+
+section .containerCards .owl-nav{
+    position: absolute;
+    top:0%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+section .containerCards .owl-nav .owl-prev .owl-nav-prev,
+section .containerCards .owl-nav .owl-next .owl-nav-next{
+    color: #115571;
+    background: transparent;
+    font-size: 2rem;
+}
+
+section .containerCards .owl-theme .owl-nav [class*='owl-']:hover{
+    background: transparent;
+    color: var(--text-gray);
+}
+
+.owl-theme .owl-nav [class*='owl-']{
+    outline: none;
+} 
+
+.containerCards{
+    margin: 0 5vw;
+
+}
+
+main .camp{
+    background: url(/assets/Abract01.png);
+    background-repeat: no-repeat;
+    background-position:right ;
+    height: 100vh;
+    width: 100%;
+    background-size: 65%;
+}
+
+main .camp .camp-post{
+    padding-top: 6rem;
+
+}
+
+
+main .camp-post .camp-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 3rem 2rem;
+    box-shadow: 0 15px 20px rgba(0,0,0,0.2);
+}
+
+main .camp-content .camp-title{
+    padding: 2rem 0;
+}
+main .camp-content .btn-camp{
+    padding: .7rem 2rem;
+    background: var(--sky);
+    margin: .5rem;
+}
+
+main .camp-content span{
+    display: block;
+}
+
+/* ------XX----- CAROUSEL ------XX-----  */
+
+
+
+
+
+/* ------------- FOOTER -------------- */
+
+.bg-fundo {
+    background: #115571 !important; 
+}
+
+
+/* ------------- FOOTER -------------- */
+
+
+
+
+/* ----------- SOBRE NOS ----------- */
+
+.CardSobreNos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+	align-self: flex-start;
+}
+
+.ItemSobreNos{
+    width: 350px;
+    max-height: fit-content;
+    display: inline-block;
+}
